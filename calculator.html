@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Language" content="en-us">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="calculatorStyleSheet.css">
+	<title>calculator</title>
+</head>
+
+
+<body bgcolor="#FF0040">
+<div class="bodyBox">
+	<form name = "Calculate">
+		
+		<input type="text" name = "box" id="numberBox" >
+		<br>
+		<input type="button" value = "1" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += '1'">
+		<input type="button" value = "2" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += '2'">
+		<input type="button" value = "3" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += '3'">
+		<input type="button" value = "+" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += ' + '">
+		<br>
+		<input type="button" value = "4" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += '4'">
+		<input type="button" value = "5" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += '5'">
+		<input type="button" value = "6" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += '6'">
+		<input type="button" value = "-" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += ' - '">
+		<br>
+		<input type="button" value = "7" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += '7'">
+		<input type="button" value = "8" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += '8'">
+		<input type="button" value = "9" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += '9'">
+		<input type="button" value = "*" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += ' * '">
+		<br>
+		<input type="button" value = "C" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value = ''">
+		<input type="button" value = "0" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += '0'">
+		<input type="button" value = "=" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value = eval(Calculate.box.value)">
+		<input type="button" value = "/" id="numberButton" onfocus="if(this.blur)this.blur()" onclick="document.Calculate.box.value += ' / '">
+	<br>
+	
+	</form>
+</div>
+<!--
+	<button type="button" id="homeButton" onclick="location.href='letterWebsite.html';" onfocus="if(this.blur)this.blur()">< HOME</button>
+-->
+</body>
+</html>
+

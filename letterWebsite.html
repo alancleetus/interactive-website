@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Language" content="en-us">
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="letterStyleSheet.css">
+	<title>Letter Website</title>
+</head>
+
+<body bgcolor="#FF0040">
+
+	<div class="box">
+		<p class="para">
+			<l onclick="colorChange(this);addLetter('A')">&nbsp;A</l>
+			<l onclick="colorChange(this);addLetter('B')">B</l>
+			<l onclick="colorChange(this);addLetter('C')">C</l>
+			<l onclick="colorChange(this);addLetter('D')">D</l>
+			<l onclick="colorChange(this);addLetter('E')">E</l>
+			<br>
+			<l onclick="colorChange(this);addLetter('F')">&nbsp;F</l>
+			<l onclick="colorChange(this);addLetter('G')">G</l>
+			<l onclick="colorChange(this);addLetter('H')">H</l>
+			<l onclick="colorChange(this);addLetter('I')">I</l>
+			<l onclick="colorChange(this);addLetter('J')">J</l>
+			<br>
+			<l onclick="colorChange(this);addLetter('K')">&nbsp;K</l>
+			<l onclick="colorChange(this);addLetter('L')">L</l>
+			<l onclick="colorChange(this);addLetter('M')">M</l>
+			<l onclick="colorChange(this);addLetter('N')">N</l>
+			<l onclick="colorChange(this);addLetter('O')">O</l>
+			<br>
+			<l onclick="colorChange(this);addLetter('P')">&nbsp;P</l>
+			<l onclick="colorChange(this);addLetter('Q')">Q</l>
+			<l onclick="colorChange(this);addLetter('R')">R</l>
+			<l onclick="colorChange(this);addLetter('S')">S</l>
+			<l onclick="colorChange(this);addLetter('T')">T</l>
+			<br>
+			<l onclick="colorChange(this);addLetter('U')">&nbsp;U</l>
+			<l onclick="colorChange(this);addLetter('V')">V</l>
+			<l onclick="colorChange(this);addLetter('W')">W</l>
+			<l onclick="colorChange(this);addLetter('X')">X</l>
+			<l onclick="colorChange(this);addLetter('Y')">Y</l>
+			<br>
+			<l onclick="colorChange(this);addLetter('Z')">Z</l>
+			
+		</p>
+	</div>
+	
+	<script>
+
+		function colorChange(elmnt) 
+		{
+			if( elmnt.style.color == "")
+			{
+				elmnt.style.color = "yellow";
+			}else if( elmnt.style.color == "yellow"){
+				elmnt.style.color = "orange";
+			}else if( elmnt.style.color == "orange"){
+				elmnt.style.color = "red";
+			}else if( elmnt.style.color == "red"){
+				elmnt.style.color = "blue";
+			}else if( elmnt.style.color == "blue"){
+				elmnt.style.color = "green";
+			}else if(elmnt.style.color == "green"){
+				elmnt.style.color = "";
+			}
+		}
+		
+		var input = "";
+		function addLetter(letter) 
+		{
+			if(letter=="Z"){
+				evalInput(input);
+				input = "";
+			}else{
+				input = input+letter;
+			}
+		}
+		function evalInput(input) 
+		{
+			if(input=="CALC"){
+				window.location.href = "calculator.html";
+			}
+			if(input=="LEG"){
+				document.write("Legend");
+			}
+		}
+	</script>
+</body>
+</html>
+
